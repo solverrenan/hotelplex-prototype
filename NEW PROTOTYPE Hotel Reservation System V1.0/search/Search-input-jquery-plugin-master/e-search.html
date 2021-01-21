@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="e-search.js"></script>
+</head>
+<body>
+  <section>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand label-info" href="/index.html">Hotelplex</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/index.html">Back to Homepage <span class="sr-only"></span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </section>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Search Vacant</h1>
+			<p>Type some text to search:</p>
+			<input type="text" class="form-control search-game" placeholder="Search Vacant (USE SPECIFIC DAY,MONTH OR YEAR TO SEE RESULT PER ONE VALUE)"> </div>
+		</div>
+	</div>
+</div>
+<div class="container">
+  <div class="col-12">
+    <h4>Searched List:</h4>
+    <p>Jaeger Gasthof,Armory Room,Azalea Room,Casino Room, James Bond Room,Spaceship Room,Hello Kitty Room,Gym Room,Mascara Room..</p>
+  </div>
+</div>
+<div class="container">
+	<div class="row containerItems">
+		<div data-filter="entire apartment html room" data-search="jaeger gasthof 21012021 21 01 2021" class="col-12 col-sm-6 col-md-4">
+            <div class="card card-lg">
+
+              <div class="card-img">
+                <a>
+                  <img src="https://pix6.agoda.net/hotelImages/1196882/-1/623f1b7b16dce0d3fedc5c37a3f77bba.jpg?s=450x450" class="card-img-top" alt="Vampire Cannon" style="width: 360px; height: 235px;"> </a>
+                <div class="badge badge-pc">Entire Apartment</div>
+              </div>
+              
+              <div class="card-block">
+                <h4 class="card-title" id="jaegar">
+                  Jaeger Gasthof - P 1173 PER NIGHT
+                </h4>
+                <p class="description" id="room"> ONLY 2 LEFT</p>
+                <p id="avail-date"> available on 21/01/2021</p>
+                <button id="1" class="btn btn-primary"onclick="checkoutJaeger()" style="margin-bottom: 5px;">Checkout</button>
+              </div>
+
+            </div>
+		</div>
+
+
+        <div data-search="armory room 24 01 2021" class="col-12 col-sm-6 col-md-4">
+            <div class="card card-lg">
+
+              <div class="card-img">
+                <a>
+                  <img src="https://hotelsogo.com/images/photos/1555052897_Armory.jpg" class="card-img-top" alt="armory room" style="width: 360px; height: 235px;"> </a>
+                <div class="badge badge-pc">Room</div>
+              </div>
+              
+              <div class="card-block">
+                <h4 class="card-title">
+                 Armory Room - P 135 PER 8 HOURS
+                </h4>
+                <p class="description"> ONLY 1 LEFT</p>
+                <p> available on 24/01/2021</p>
+                <button id="2" class="btn btn-primary"onclick="checkoutArmory()" style="margin-bottom: 5px;" >Checkout</button>
+              </div>
+
+            </div>
+         </div> 
+
+         <div data-search="azalea room 21 01 2021" class="col-12 col-sm-6 col-md-4">
+          <div class="card card-lg">
+
+            <div class="card-img">
+              <a>
+                <img src="https://hotelsogo.com/images/photos/1555052809_azalea%201-min.jpg" class="card-img-top" alt="azalea room" style="width: 360px; height: 235px;"> </a>
+              <div class="badge badge-pc">Room</div>
+            </div>
+            
+            <div class="card-block">
+              <h4 class="card-title">
+              Azalea Room - P 335 PER 8 HOURS
+              </h4>
+              <p class="description"> ONLY 5 LEFT</p>
+              <p> available on 21/01/2021</p>
+              <button class="btn btn-primary"onclick="checkoutAzalea()" style="margin-bottom: 5px;">Checkout</button>
+            </div>
+
+          </div>
+       </div> 
+
+
+       <div data-search="casino room 21 01 2021" class="col-12 col-sm-6 col-md-4">
+        <div class="card card-lg">
+
+          <div class="card-img">
+            <a>
+              <img src="https://hotelsogo.com/images/photos/1555052535_Casino.jpg" class="card-img-top" alt="casino room" style="width: 360px; height: 235px;"> </a>
+            <div class="badge badge-pc">Exclusive Room</div>
+          </div>
+          
+          <div class="card-block">
+            <h4 class="card-title">
+            Casino Room - P 599 PER 8 HOURS
+            </h4>
+            <p class="description"> ONLY 1 LEFT</p>
+            <p> available on 21/01/2021</p>
+            <button class="btn btn-primary"onclick="checkoutCasino()" style="margin-bottom: 5px;">Checkout</button>
+          </div>
+
+        </div>
+     </div> 
+
+     <div data-search="james bond room 10 02 2021 007" class="col-12 col-sm-6 col-md-4">
+      <div class="card card-lg">
+
+        <div class="card-img">
+          <a>
+            <img src="https://hotelsogo.com/images/photos/1555051918_James%20bond.jpg" class="card-img-top" alt="james bond room" style="width: 360px; height: 235px;"> </a>
+          <div class="badge badge-pc">Action Room</div>
+        </div>
+        
+        <div class="card-block">
+          <h4 class="card-title">
+          James Bond Room - P 599 PER 8 HOURS
+          </h4>
+          <p class="description"> ONLY 2 LEFT</p>
+          <p> available on 10/02/2021</p>
+          <button class="btn btn-primary"onclick="checkoutJames()" style="margin-bottom: 5px;">Checkout</button>
+        </div>
+
+      </div>  
+
+     </div>
+     <div data-search="spaceship room 30 02 2021 space ship" class="col-12 col-sm-6 col-md-4">
+      <div class="card card-lg">
+
+        <div class="card-img">
+          <a>
+            <img src="https://hotelsogo.com/images/photos/1555050670_Spaceship.jpg" class="card-img-top" alt="spaceship room" style="width: 360px; height: 235px;"> </a>
+          <div class="badge badge-pc">Action Room</div>
+        </div>
+        
+        <div class="card-block">
+          <h4 class="card-title">
+          Spaceship Room - P 850 PER 12 HOURS
+          </h4>
+          <p class="description"> ONLY 2 LEFT</p>
+          <p> available on 30/02/2021</p>
+          <button class="btn btn-primary"onclick="checkoutSpaceship()" style="margin-bottom: 5px;">Checkout</button>
+        </div>
+      </div>
+     </div>
+
+     <div data-search="hello kitty room 30 02 2021 heelokitty" class="col-12 col-sm-6 col-md-4">
+      <div class="card card-lg">
+
+        <div class="card-img">
+          <a>
+            <img src="https://hotelsogo.com/images/photos/1555052160_Hello%20Kitty.jpg" class="card-img-top" alt="hello kitty room" style="width: 360px; height: 235px;"> </a>
+          <div class="badge badge-pc">Girly Room</div>
+        </div>
+        
+        <div class="card-block">
+          <h4 class="card-title">
+          Hello Kitty Room - P 850 PER 12 HOURS
+          </h4>
+          <p class="description"> ONLY 2 LEFT</p>
+          <p> available on 30/02/2021</p>
+          <button class="btn btn-primary"onclick="checkoutHello()" style="margin-bottom: 5px;">Checkout</button>
+        </div>
+      </div>
+     </div>
+     <div data-search="gym room 01 03 2021 gymrroom" class="col-12 col-sm-6 col-md-4">
+      <div class="card card-lg">
+
+        <div class="card-img">
+          <a>
+            <img src="https://hotelsogo.com/images/photos/1555052207_Gym.jpg" class="card-img-top" alt="gym room" style="width: 360px; height: 235px;"> </a>
+          <div class="badge badge-pc">Macho Room</div>
+        </div>
+        
+        <div class="card-block">
+          <h4 class="card-title">
+          Gym Room - P 850 PER 12 HOURS
+          </h4>
+          <p class="description"> ONLY 4 LEFT</p>
+          <p> available on 01/03/2021</p>
+          <button class="btn btn-primary"onclick="checkoutGym()" style="margin-bottom: 5px;">Checkout</button>
+        </div>
+      </div>
+     </div>
+     <div data-search="masraca room 01 03 2021 mascararoom" class="col-12 col-sm-6 col-md-4">
+      <div class="card card-lg">
+
+        <div class="card-img">
+          <a>
+            <img src="https://hotelsogo.com/images/photos/1555051455_Mascara.jpg" class="card-img-top" alt="mascara room" style="width: 360px; height: 235px;"> </a>
+          <div class="badge badge-pc">Secret Room</div>
+        </div>
+        
+        <div class="card-block">
+          <h4 class="card-title">
+          Mascara Room - P 250 PER 8 HOURS
+          </h4>
+          <p class="description"> ONLY 1 LEFT</p>
+          <p> available on 01/03/2021</p>
+          <button class="btn btn-primary" onclick="checkoutMascara()" style="margin-bottom: 5px;">Checkout</button>
+        </div>
+      </div>
+     </div>
+      
+</div>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	     $('input.form-control.search-game').search(function(){
+          			
+          		//execute after done typing.
+
+      });
+      function checkoutJaeger(){
+          const jaeger = {
+          title: 'Jaeger Gasthof',
+          price: '1173.00',
+          availroom: 'ONLY TWO LEFT',
+          availdate: '21/01/2021',
+          numper:'MAX IS 4 PERSON'
+        };
+
+        const params = new URLSearchParams(jaeger)
+        console.log(params.toString());
+        location.href = "/PaymentGate.html?" + params.toString();
+      }
+
+      function checkoutArmory(){
+        const armory ={
+          title: 'Armory Room',
+          price: '135.00',
+          availroom: 'ONLY ONE LEFT',
+          availdate: '24/01/2021',
+          numper:'MAX IS 4 PERSON'
+        };
+
+        const params = new URLSearchParams(armory)
+        location.href = "/PaymentGate.html?" + params.toString();
+      }
+
+      function checkoutAzalea(){
+        const azalea ={
+          title:'Azalea Room',
+          price:'335.00',
+          availroom:'ONLY 5 LEFT',
+          availdate:'21/01/2021',
+          numper:'MAX IS 4 PERSON'
+        };
+
+        const params = new URLSearchParams(azalea)
+        location.href = "/PaymentGate.html?" + params.toString();
+      }
+
+      function checkoutCasino(){
+        const casino={
+          title:'Casino Room',
+          price:'599.00',
+          availroom:'ONLY 1 LEFT',
+          availdate:'21/01/2021',
+          numper:'MAX IS 4 PERSON'
+        };
+
+        const params = new URLSearchParams(casino)
+        location.href = "/PaymentGate.html?" + params.toString();
+      }
+
+      function checkoutJames(){
+        const james={
+          title:'James Bond Room',
+          price:'599.00',
+          availroom:'ONLY 2 LEFT',
+          availdate:'10/02/2021',
+          numper:'MAX IS 4 PERSON'
+        };
+
+        const params = new URLSearchParams(james)
+        location.href = "/PaymentGate.html?" + params.toString();
+      }
+
+      function checkoutSpaceship(){
+        const spaceship={
+          title:'Spaceship Room',
+          price:'850.00',
+          availroom:'ONLY 2 LEFT',
+          availdate:'30/02/2021',
+          numper:'MAX IS 4 PERSON'
+        };
+
+        const params = new URLSearchParams(spaceship)
+        location.href = "/PaymentGate.html?" + params.toString();
+      }
+
+      function checkoutHello(){
+        const hello={
+          title:'Hello Kitty Room',
+          price:'850.00',
+          availroom:'ONLY 2 LEFT',
+          availdate:'30/02/2021',
+          numper:'MAX IS 4 PERSON'
+        };
+
+        const params = new URLSearchParams(hello)
+        location.href = "/PaymentGate.html?" + params.toString();
+      }
+
+      function checkoutGym(){
+        const gym={
+          title:'Gym Room',
+          price:'850.00',
+          availroom:'ONLY 4 LEFT',
+          availdate:'01/03/2021',
+          numper:'MAX IS 4 PERSON'
+        };
+
+        const params = new URLSearchParams(gym)
+        location.href = "/PaymentGate.html?" + params.toString();
+      }
+
+      function checkoutMascara(){
+        const mascara={
+          title:'Mascara Room',
+          price:'250.00',
+          availroom:'ONLY 1 LEFT',
+          availdate:'01/03/2021',
+          numper:'MAX IS 4 PERSON'
+        };
+
+        const params = new URLSearchParams(mascara)
+        location.href = "/PaymentGate.html?" + params.toString();
+      }
+    </script>
+</body>
+</html>
